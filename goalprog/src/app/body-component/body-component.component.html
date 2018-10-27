@@ -1,0 +1,35 @@
+<div>
+	<fieldset class="formcontroller">
+		<label class="formlabel">StudentData Submit Form</label>
+		<form id="studentdatacollectorform">
+		<div id="studentdatacollector" class="studentdatacollector">
+			<div class="firstname">
+				<label>First Name: </label>
+				<input type="text" class="firstnamefield" appBlueColor placeholder="first name" name="firstName" maxlength="20" required="true" bind-value="fname">
+			</div>
+			<div class="lastname">
+				<label>Last Name: </label>
+				<input type="text" class="lastnamefield" placeholder="last name" name="lastname" maxlength="20" required="true" bind-value="lname">
+			</div>
+			<div class="mobile">
+				<label>Mobile Number: </label>
+				<input type="text" class="mobilefield"placeholder="1234567890" name="mobile" maxlength="10" required="true" bind-value="mob">
+			</div>
+			<div class="email">
+				<label>Email: </label>
+				<input type="text" class="emailfield" placeholder="abc@abc.com" name="email" maxlength="20" required="true" bind-value="mail">
+			</div>
+			<div class="email2">
+				<label>Email2: </label>
+				<input type="text" class="emailfield2" placeholder="abc@abc.com" name="email2" maxlength="20" required="true" bind-value="mail23" on-keydown="mail2($event)" (input)=changeemail1($event);>
+			</div>
+
+			<div class="actionbuttons">
+				<input type="button" (click)="clear()" name="clear" class="cancel" value="Clear">
+				<input type="submit" name="submit" class="submit" value="submit">
+			</div>
+
+		</div>
+		</form>
+	</fieldset>
+</div>
