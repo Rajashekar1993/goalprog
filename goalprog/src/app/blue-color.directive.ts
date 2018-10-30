@@ -13,8 +13,10 @@ export class BlueColorDirective {
   	console.log('mouse entered');
   }
 
-  @HostListener('click',['$event.target']) onClick(btn) {
-    console.log('button', btn, 'number of clicks:', this.numberOfClicks++);
+  @HostListener('click', ['$event.target'])
+  onClick(btn) {
+    console.log('button', event, 'number of clicks:', this.numberOfClicks++);
+    console.log(event);
  }
   
 

@@ -7,6 +7,22 @@ import { HeadercomponentComponent } from './headercomponent/headercomponent.comp
 import { FootercomponentComponent } from './footercomponent/footercomponent.component';
 import { BlueColorDirective } from './blue-color.directive';
 import { BodyComponentComponent } from './body-component/body-component.component';
+import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
+const appRoutes: Routes = [
+  { 
+  path: 'dashboard',
+  component: DashboardComponent
+  },
+
+  {
+    path: 'studentregistration',
+    component: BodyComponentComponent
+  }
+  
+
+];
 
 @NgModule({
   declarations: [
@@ -14,7 +30,9 @@ import { BodyComponentComponent } from './body-component/body-component.componen
     HeadercomponentComponent,
     FootercomponentComponent,
     BlueColorDirective,
-    BodyComponentComponent
+    BodyComponentComponent,
+    DashboardComponent,
+    
   ],
   imports: [
     BrowserModule,
