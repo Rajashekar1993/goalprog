@@ -15,7 +15,7 @@ export class BlueColorDirective {
 
   @HostListener('click', ['$event.target'])
   onClick(btn) {
-    console.log('button', event, 'number of clicks:', this.numberOfClicks++);
+    //console.log('button', event, 'number of clicks:', this.numberOfClicks++);
     console.log(event);
  }
   
